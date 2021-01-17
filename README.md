@@ -23,6 +23,8 @@ Both the *.dat* and *.contest* files can be opened and edited with most text edi
 
 The contents of these files use a markup language only used by BAMZOOKi, it's visually similar to [JSON](https://www.json.org/json-en.html), but more closely related to [table syntax in LUA](https://www.lua.org/pil/2.5.html). Don't worry if you haven't heard of either of these as we will be learning it from scratch.
 
+When making edits to a contest that is alreadly listed on the simulator, you only need to save the contest file and re-run the contest to see the changes (no need to restart the simulator).
+
 In summary, a new contest requires:
 - A *.contest* file
 - An entry in *ContestPack1.dat* or a .dat file in the same location for it to be listed in the simulator
@@ -165,5 +167,7 @@ We also need to define the colour, for this, we have 3 parameters: "red", "green
 With these values, we should have a pretty red cube
 
 We now have the bare minimum parameters for the simulator to create a cube, so let's see how it looks:
+
 ![Congratulations! You have a cube!](images/part1_cube.png "A fine cube")
+
 Congratulations! You have a cube!
