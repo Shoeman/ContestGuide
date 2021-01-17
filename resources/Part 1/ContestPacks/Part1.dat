@@ -1,0 +1,50 @@
+"Empty Table - Single Zook" = {
+"agents" = {
+	1 = { 
+	"team" = "Green"
+	"name" = "Green team player"
+	"selectable" = 1
+	}
+}
+
+"rounds" = { 
+	1 = {
+		"name" = "Round 1"
+		"contest" = "TUTORIAL_EMPTY_SINGLE"
+		"contestants" = {
+		1 = 1
+		}
+	}
+}
+
+"camera" = {
+	"start" = (-20, 0, 0)
+	"finish" = (20, 0, 0)
+}
+"picture" = "TUTORIAL_EMPTY_SINGLE.png"
+}
+"Tutorial - Cube" = {
+"agents" = {
+	1 = { 
+	"team" = "Green"
+	"name" = "Green team player"
+	"selectable" = 1
+	}
+}
+
+"rounds" = { 
+	1 = {
+		"name" = "Round 1"
+		"contest" = "TUTORIAL_CUBE"
+		"contestants" = {
+		1 = 1
+		}
+	}
+}
+
+"camera" = {
+	"start" = (-20, 0, 0)
+	"finish" = (20, 0, 0)
+}
+"picture" = "TUTORIAL_CUBE.png"
+}
