@@ -40,7 +40,7 @@ Each agent has a number which is a unique id, it doesn't have to be in order and
 
 There are a fixed number of types of agents, most of them being simple 3D shapes such as a cube or a cylinder. Some are more complex like swinging doors or the zook placeholder but for now we will be looking at the cube.
 
-Before we begin, I've made an [empty contest](resources/Part 1/Contests) for us to make a cube in. All it has is a table and a zook to run across it. We will be using the zook to see how it interacts with the cube.
+Before we begin, I've made an [empty contest](<resources/Part 1/Contests>) for us to make a cube in. All it has is a table and a zook to run across it. We will be using the zook to see how it interacts with the cube.
 
 We start with a unique number for the id, which can be the increment of the last agent, along with an equals sign, and a pair of curly braces:
 
