@@ -171,3 +171,59 @@ We now have the bare minimum parameters for the simulator to create a cube, so l
 ![Congratulations! You have a cube!](images/part1_cube.png "A fine cube")
 
 Congratulations! You have a cube!
+
+
+Now that we can run the contest with our cube we can make small changes to the parameters and see how they affect the cube.
+
+We will first change the position and scale
+
+    "params" = 
+    {
+    	"shape" = "cube"
+    	"position" = (-50, 2, 0)
+    	"scale" = (4, 10, 7)
+    	"eulers" = (0, 0, 0)
+    	"solid" = 1
+    	"movable" = false
+    
+    	"visible" = 1
+    	"red" = 0.8
+    	"green" = 0.1
+    	"blue" = 0.1
+    }
+
+The first number in the group, the X-axis, goes along the length of the table, with the negative going towards the end where zooks typically start, and the positive towards the opposite end, where the finish line typically is. For position, an X value of -50 brings the cube much closer to the zook.
+
+The Y-Axis is up/down, with positive numbers going up and negative going down. A value of 2 will put the cube slightly above the surface of the table.
+
+The Z-Axis goes along the width of the table, or to the left/right of the zook. We are leaving the value of 0 here to keep it in the middle.
+
+The axis in scale follow the same directions so (4, 10, 7) gives us a much shorter, same height, slightly thinner cube.
+
+And yes, that technically leaves us with a cuboid but it's called a cube either way in a contest file.
+
+![A floating cube](images/part1_cube2.png "A floating cube")
+
+The cube is fixed in the air because we set "movable" to *false*.
+
+Let's add some rotation to the cube:
+
+    "params" = 
+    {
+    	"shape" = "cube"
+    	"position" = (-50, 2, 0)
+    	"scale" = (4, 10, 7)
+    	"eulers" = (0, 45, 0)
+    	"solid" = 1
+    	"movable" = false
+    
+    	"visible" = 1
+    	"red" = 0.8
+    	"green" = 0.1
+    	"blue" = 0.1
+    }
+
+"eulers" uses [euler angles](https://mathworld.wolfram.com/EulerAngles.html) which can be very unpleasant to work with, but if you only alter one value, it will be a simple rotation about the x, y or z axis respectively. If you need to rotate about multiple axis, I would suggest using a calculator work out the values. For our cube, we have a simple 45 degree rotation about the Y axis:
+
+![A twisted cube](images/part1_cube3.png "A twisted cube")
+
