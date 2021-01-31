@@ -96,21 +96,43 @@
 	4 = 
 	{
 		"agent" = "Target"
-		"params" = 
-		{
-			"shape" = "cube"
-			"position" = (0, 0, 0)
-			"scale" = (10, 10, 10)
-			"eulers" = (0, 0, 0)
-
-			"movable" = false
-			"solid" = 1
-
-			"visible" = 1
-			"red" = 0.9
-			"green" = 0.1
-			"blue" = 0.1
+	    	"params" = 
+    		{
+    			"shape" = "cube"
+		    	"position" = (0, 0, 0)
+		    	"scale" = (10, 10, 10)
+		    	"eulers" = (0, 0, 0)
+		    	"solid" = 1
+		    	"movable" = false
+		    	
+		    	"visible" = 1
+		    	"red" = 0.8
+		    	"green" = 0.1
+		    	"blue" = 0.1
 		}
+
+	}
+	5 = 
+	{
+		"agent" = "Target"
+		"params" = 
+	    	{
+			"description" = "the modified cube"
+		    	"shape" = "cube"
+		    	"position" = (-50, 2, 0)
+		    	"scale" = (4, 10, 7)
+		    	"eulers" = (0, 45, 0)
+		    	"solid" = 1
+		    	"movable" = 1
+			"density" = 0.1
+		    
+			"shadow" = 1
+		    	"visible" = 1
+		    	"red" = 1
+		    	"green" = 1
+		    	"blue" = 1
+			"texture" = "tiger"
+	    	}
 
 	}
 }

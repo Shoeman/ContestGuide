@@ -143,7 +143,7 @@ We also need to give it some information on how it looks. Firstly whether we can
     	"eulers" = (0, 0, 0)
     	"solid" = 1
     	"movable" = false
-    
+    	
     	"visible" = 1
     }
 
@@ -157,7 +157,7 @@ We also need to define the colour, for this, we have 3 parameters: "red", "green
     	"eulers" = (0, 0, 0)
     	"solid" = 1
     	"movable" = false
-    
+    	
     	"visible" = 1
     	"red" = 0.8
     	"green" = 0.1
@@ -185,7 +185,7 @@ We will first change the position and scale
     	"eulers" = (0, 0, 0)
     	"solid" = 1
     	"movable" = false
-    
+    	
     	"visible" = 1
     	"red" = 0.8
     	"green" = 0.1
@@ -216,7 +216,7 @@ Let's add some rotation to the cube:
     	"eulers" = (0, 45, 0)
     	"solid" = 1
     	"movable" = false
-    
+    	
     	"visible" = 1
     	"red" = 0.8
     	"green" = 0.1
@@ -237,7 +237,7 @@ We will now focus a bit more on the looks of the cube. You may have notice it do
     	"eulers" = (0, 45, 0)
     	"solid" = 1
     	"movable" = false
-    
+    	
     	"shadow" = 1
     	"visible" = 1
     	"red" = 0.8
@@ -248,7 +248,9 @@ We will now focus a bit more on the looks of the cube. You may have notice it do
 ![A cube with a shadow](images/part1_cube4.png "A cube with a shadow")
 
 Our cube is a bit plain so let's give it a texture. Textures are simply images that are mapped over the surface of an agent. You can find the available images to be used as textures in:
+
 `C:/Program Files (x86)/BAMZOOKi/Agents/World/Target`
+
 You just need the filename without the extension for example, I like the look of tiger.PNG, so I can give it a "texture" of "tiger"
 
     {
@@ -258,7 +260,7 @@ You just need the filename without the extension for example, I like the look of
     	"eulers" = (0, 45, 0)
     	"solid" = 1
     	"movable" = false
-    
+    	
 		"shadow" = 1
     	"visible" = 1
     	"red" = 0.8
@@ -278,7 +280,7 @@ Textures can end up a bit dark if you have colour on your agent as well. To make
     	"eulers" = (0, 45, 0)
     	"solid" = 1
     	"movable" = false
-    
+    	
 		"shadow" = 1
     	"visible" = 1
     	"red" = 1
@@ -288,3 +290,50 @@ Textures can end up a bit dark if you have colour on your agent as well. To make
     }
 
 ![Tiger cube](images/part1_cube6.png "Tiger cube")
+
+We're going to add one more parameter before we're done with our cube but before that, let's make it "movable" and see what happens:
+
+	{
+    	"shape" = "cube"
+    	"position" = (-50, 2, 0)
+    	"scale" = (4, 10, 7)
+    	"eulers" = (0, 45, 0)
+    	"solid" = 1
+    	"movable" = 1
+    	
+		"shadow" = 1
+    	"visible" = 1
+    	"red" = 1
+    	"green" = 1
+    	"blue" = 1
+		"texture" = "tiger"
+    }
+
+![Fallen cube](images/part1_cube7.png "Fallen cube")
+
+Unsurprisingly, the cube has fallen to the floor now that it's *movable*, but my zook is still struggling to push it out of the way. We can change the cube's mass without changing its size with the *"density"* parameter:
+
+    {
+    	"shape" = "cube"
+    	"position" = (-50, 2, 0)
+    	"scale" = (4, 10, 7)
+    	"eulers" = (0, 45, 0)
+    	"solid" = 1
+    	"movable" = 1
+		"density" = 0.1
+    	
+		"shadow" = 1
+    	"visible" = 1
+    	"red" = 1
+    	"green" = 1
+    	"blue" = 1
+		"texture" = "tiger"
+    }
+
+![Moving cube](images/part1_cube8.png "Brum is still struggling but getting somewhere")
+
+"density" can be any number above zero, by default it is 1, which is 1 gram per cubic cm. If you want to calculate the exact mass of a cube, remember that 1 unit of scale is equal to 4cm.
+
+This is where we will stop modifying a cube. You may think this is a lot to take in for a single shape but most, if not all, of the parameters used here can be used with other agents too.
+
+These are not all the parameters that can be given to a cube or another agent but some of the most common ones that you will have to consider for almost every agent you add to a contest. We will learn about more parameters in future parts of this guide but they should be easy to pick up as they will follow the same key/value pair pattern as the others.
