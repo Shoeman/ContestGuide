@@ -227,3 +227,64 @@ Let's add some rotation to the cube:
 
 ![A twisted cube](images/part1_cube3.png "A twisted cube")
 
+We will now focus a bit more on the looks of the cube. You may have notice it doesn't have a shadow. That's because it needs to be added as another parameter, "shadow", which is another boolean property:
+
+    "params" = 
+    {
+    	"shape" = "cube"
+    	"position" = (-50, 2, 0)
+    	"scale" = (4, 10, 7)
+    	"eulers" = (0, 45, 0)
+    	"solid" = 1
+    	"movable" = false
+    
+    	"shadow" = 1
+    	"visible" = 1
+    	"red" = 0.8
+    	"green" = 0.1
+    	"blue" = 0.1
+    }
+
+![A cube with a shadow](images/part1_cube4.png "A cube with a shadow")
+
+Our cube is a bit plain so let's give it a texture. Textures are simply images that are mapped over the surface of an agent. You can find the available images to be used as textures in:
+`C:/Program Files (x86)/BAMZOOKi/Agents/World/Target`
+You just need the filename without the extension for example, I like the look of tiger.PNG, so I can give it a "texture" of "tiger"
+
+    {
+    	"shape" = "cube"
+    	"position" = (-50, 2, 0)
+    	"scale" = (4, 10, 7)
+    	"eulers" = (0, 45, 0)
+    	"solid" = 1
+    	"movable" = false
+    
+		"shadow" = 1
+    	"visible" = 1
+    	"red" = 0.8
+    	"green" = 0.1
+    	"blue" = 0.1
+		"texture" = "tiger"
+    }
+
+![Red tiger cube](images/part1_cube5.png "Red tiger cube")
+
+Textures can end up a bit dark if you have colour on your agent as well. To make a texture appear as it does in the image file, you need to set the original colour white, which means setting the rgb values to 1:
+
+	{
+    	"shape" = "cube"
+    	"position" = (-50, 2, 0)
+    	"scale" = (4, 10, 7)
+    	"eulers" = (0, 45, 0)
+    	"solid" = 1
+    	"movable" = false
+    
+		"shadow" = 1
+    	"visible" = 1
+    	"red" = 1
+    	"green" = 1
+    	"blue" = 1
+		"texture" = "tiger"
+    }
+
+![Tiger cube](images/part1_cube6.png "Tiger cube")
