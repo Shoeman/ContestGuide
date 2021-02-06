@@ -346,7 +346,7 @@ As mentioned in Part 1, the cube was a type of "Target", an agent that has a few
 
 	4 = 
 	{
-		"agent" = "Target"
+	    "agent" = "Target"
 	    "params" = 
 	    {
 	    	"shape" = "sphere"
@@ -375,9 +375,9 @@ Ball is almost identical to sphere, the only difference is that the origin is at
 
 	5 = 
 	{
-		"agent" = "Target"
+	    "agent" = "Target"
 	    "params" = 
-    	{
+        {
 	    	"shape" = "ball"
 	    	"position" = (0, 0, 0)
 	    	"scale" = (5, 0, 0)
@@ -400,7 +400,7 @@ As you can see, a ball with identical parameters to a sphere (except colour) is 
 
 	6 = 
 	{
-		"agent" = "Target"
+	    "agent" = "Target"
 	    "params" = 
 	    {
 	    	"shape" = "cylinder"
@@ -427,16 +427,60 @@ To make a cylinder stand vertically, you can rotate it 90 degrees about the X-ax
 
 ### Capsule
 
+	7 = 
+	{
+	    "agent" = "Target"
+	    "params" = 
+	    {
+	    	"shape" = "capsule"
+	    	"position" = (0, 0, 0)
+	    	"scale" = (4, 0, 10)
+	    	"eulers" = (0, 0, 0)
+	    	"solid" = 1
+	    	"movable" = false
+	    	
+	    	"visible" = 1
+	    	"red" = 0.8
+	    	"green" = 0.6
+	    	"blue" = 0.1
+	    }
+	}
+
 ![An orange capsule](images/part2_capsule.png "An orange capsule")
 
-A capsule is similar to a sphere but with rounded ends.
+A capsule is similar to a sphere but with rounded ends. Like the cylinder, the scale Z-value is the 'length' of the capsule. However, a capsule's length includes both the Z-value, and the radii of the rounded ends so a capsule will be longer than a cylinder with the same scale.
+
+![A capsule and cylinder of identical scale](images/part2_capsule2.png "A capsule and cylinder of identical scale")
 
 Capsules have some odd physics when movable (little to no friction when on their sides) so they are often fixed in place when used as an obstacle.
 
 ### Wedge
 
-A wedge is like a cube that's been sliced along a diagonal
+A wedge is like a cube that's been sliced along a diagonal. The diagonal goes along the Z-axis
 
-!Warning!
+	8 = 
+	{
+	    "agent" = "Target"
+	    "params" = 
+	    {
+	    	"shape" = "wedge"
+	    	"position" = (0, 0, 0)
+	    	"scale" = (7, 5, 10)
+	    	"eulers" = (0, 0, 0)
+	    	"solid" = 1
+	    	"movable" = false
+	    	
+	    	"visible" = 1
+	    	"red" = 0.1
+	    	"green" = 0.8
+	    	"blue" = 0.1
+    	}
+	}
+
+![A green wedge](images/part2_wedge.png "A green wedge")
 
 The diagonal face of the wedge does not have proper collision detection (except in Street Rules) so it's not recommended to use it as an obstacle.
+
+Including the cube, these are all the shapes that fall under the "Target" agent. They provide enough to make obstacles for a wide variety of contests. There are other agents that can be used as obstacles but most of the are a bit more niche, we will be seeing them in future parts though.
+
+If you would like a contest file containing all these Target agents as a reference, I have provided one [here](<resources/Part 2/Contests/TUTORIAL_TARGETS.contest>).
