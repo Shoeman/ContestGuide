@@ -30,5 +30,6 @@ In summary, a new contest requires:
 - An entry in *ContestPack1.dat* or a .dat file in the same location for it to be listed in the simulator
 - An image for the simulator
 
-[Part 1 - A cube](PART1.md)
+[Part 1 - A Cube](PART1.md)
+
 [Part 2 - More Target Agents (Shapes)](PART2.md)
