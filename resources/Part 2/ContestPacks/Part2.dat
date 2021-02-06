@@ -1,0 +1,25 @@
+"Tutorial - Targets" = {
+"agents" = {
+	1 = { 
+	"team" = "Green"
+	"name" = "Green team player"
+	"selectable" = 1
+	}
+}
+
+"rounds" = { 
+	1 = {
+		"name" = "Round 1"
+		"contest" = "TUTORIAL_TARGETS"
+		"contestants" = {
+		1 = 1
+		}
+	}
+}
+
+"camera" = {
+	"start" = (-20, 0, 0)
+	"finish" = (20, 0, 0)
+}
+"picture" = "TUTORIAL_TARGETS.png"
+}
