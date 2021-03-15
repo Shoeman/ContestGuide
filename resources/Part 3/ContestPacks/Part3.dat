@@ -1,0 +1,18 @@
+"Tutorial - Table" = {
+"agents" = {
+}
+
+"rounds" = { 
+	1 = {
+		"name" = "Round 1"
+		"contest" = "TUTORIAL_TABLE"
+		"contestants" = {}
+	}
+}
+
+"camera" = {
+	"start" = (-20, 0, 0)
+	"finish" = (20, 0, 0)
+}
+"picture" = "TUTORIAL_TABLE.png"
+}

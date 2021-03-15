@@ -1,0 +1,28 @@
+"behaviours" = 
+{
+}
+"agents" = 
+{
+	1 = 
+	{
+		"agent" = "PoloTable"
+		"params" = 
+		{
+			"x" = 80
+			"y" = 25
+			"z" = 100
+			"position" = (0, 0, 0)
+			"description" = ""
+			"group" = "0"
+			"hole_x" = 50
+			"hole_z" = 40
+			"texture" = "stars_uniform"
+
+			"red" = 1
+			"green" = 1
+			"blue" = 0
+		}
+		"type" = ""
+	}
+}
+"version" = 1
