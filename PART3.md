@@ -21,7 +21,7 @@ In every contest so far, we have seen the giant grey block that is the table, an
 
 ![A table](images/part3_table.png "A table")
 
-### xyz
+### Scale - xyz
 
 Unlike "Target" agents which have a single parameter, the table's scale is defined with individual "x", "y" and "z" parameters which represent the length, height and depth of the respectively.
 
@@ -48,7 +48,7 @@ Pretty much every table from the original contests have the same scale but you c
 
 While you can change the value of "y", it is not recommended as many aspects of the table will stay at a fixed value of 25 (1 metre high) so the change won't do what you intend it to. Since the table represented a physical table in the real world, the developers didn't make it too flexible.
 
-### Hole
+### The Hole
 
 A key difference between the table and a regular cube is that you can have a hole in the top of the table using "hole_x" and "hole_z".
 

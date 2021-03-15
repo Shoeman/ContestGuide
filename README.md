@@ -33,3 +33,5 @@ In summary, a new contest requires:
 [Part 1 - A Cube](PART1.md)
 
 [Part 2 - More Target Agents (Shapes)](PART2.md)
+
+[Part 3 - The Table](PART3.md)
