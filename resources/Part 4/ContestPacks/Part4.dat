@@ -1,0 +1,21 @@
+"Tutorial - Zook Placeholder" = {
+"agents" = {
+}
+
+"rounds" = { 
+	1 = {
+		"name" = "Round 1"
+		"contest" = "TUTORIAL_ZOOK_PLACEHOLDER"
+		"contestants" = {
+		1 = 2
+		2 = 1
+		}
+	}
+}
+
+"camera" = {
+	"start" = (-20, 0, 0)
+	"finish" = (20, 0, 0)
+}
+"picture" = "TUTORIAL_ZOOK_PLACEHOLDER.png"
+}

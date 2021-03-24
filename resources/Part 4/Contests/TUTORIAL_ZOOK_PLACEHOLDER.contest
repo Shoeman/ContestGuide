@@ -1,0 +1,75 @@
+"behaviours" = 
+{
+}
+"agents" = 
+{
+	1 = 
+	{
+		"agent" = "PoloTable"
+		"params" = 
+		{
+			"description" = ""
+			"group" = "0"
+			"position" = (0, 0, 0)
+			"y" = 25
+			"x" = 157.5
+			"hole_x" = 0
+			"z" = 63
+			"hole_z" = 0
+		}
+		"type" = ""
+	}
+	2 = 
+	{
+		"agent" = "ZookPlaceHolder"
+		"params" = 
+		{
+			"position" = (-62, 0.1, 0)
+			"eulers" = (0, -90, 0)
+			"scale" = (1, 1, 1)
+			"group" = "1"
+			"description" = "Configured by 1 = 2 as it's the first zook in the file making it the red team"
+			"hatpin" = (-3, 0, 0)
+			"flags" = "1"
+			"movable" = false
+		}
+		"type" = ""
+	}
+	3 = 
+	{
+		"agent" = "ZookPlaceHolder"
+		"params" = 
+		{
+			"position" = (0, 0.1, 0)
+			"eulers" = (0, -90, 0)
+			"scale" = (1, 1, 1)
+			"group" = "1"
+			"description" = "Configured by 2 = 1 as it's the second zook in the file making it the green team"
+			"hatpin" = (0, 0, 0)
+			"flags" = "1"
+			"movable" = 1
+		}
+		"type" = ""
+	}
+	4 = 
+	{
+		"agent" = "ZookPlaceHolder"
+		"params" = 
+		{
+			"position" = (62, 0.1, 0)
+			"eulers" = (0, -90, 0)
+			"scale" = (1, 1, 1)
+			"group" = "1"
+			"description" = "You need to give a full valid path to a zook for fullname below"
+			"hatpin" = (0, 0, 0)
+			"flags" = "1"
+			"movable" = 1
+			"contestant" = 
+			{
+				"fullname" = "C:\users\<<PATH TO ZOOK>>\1.0.zook"
+			}
+		}
+		"type" = ""
+	}
+}
+"version" = 1
