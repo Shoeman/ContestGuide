@@ -35,3 +35,5 @@ In summary, a new contest requires:
 [Part 2 - More Target Agents (Shapes)](PART2.md)
 
 [Part 3 - The Table](PART3.md)
+
+[Part 4 - Zook Placeholders](PART4.md)
