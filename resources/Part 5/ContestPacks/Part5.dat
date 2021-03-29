@@ -1,0 +1,17 @@
+"Tutorial - Behaviour follow" = {
+"agents" = {
+}
+
+"rounds" = { 
+	1 = {
+		"name" = "Round 1"
+		"contest" = "TUTORIAL_FOLLOW"
+		"contestants" = {
+		1 = 2
+		}
+	}
+}
+"camera" = {
+}
+"picture" = "TUTORIAL_FOLLOW.png"
+}

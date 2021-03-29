@@ -1,0 +1,108 @@
+"behaviours" = 
+{
+	1 = 
+	{
+		"id" = 1
+		"owner" = 2
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = -3
+				"behaviour" = -2
+			}
+		}
+		"name" = "Follow"
+		"params" = 
+		{
+			"startRandom" = 1
+			"loop" = 4
+			"targets" = 
+			{
+				1 = 3
+				2 = 4
+			}
+		}
+		"triggerOffEvents" = 
+		{
+		}
+		"destroyOnEvents" = 
+		{
+		}
+		"description" = ""
+	}
+}
+"agents" = 
+{
+	1 = 
+	{
+		"agent" = "PoloTable"
+		"params" = 
+		{
+			"description" = ""
+			"group" = "0"
+			"position" = (0, 0, 0)
+			"y" = 25
+			"x" = 157.5
+			"hole_x" = 0
+			"z" = 63
+			"hole_z" = 0
+		}
+		"type" = ""
+	}
+	2 = 
+	{
+		"agent" = "ZookPlaceHolder"
+		"params" = 
+		{
+			"scale" = (1, 1, 1)
+			"group" = "1"
+			"eulers" = (0, -90, 0)
+			"position" = (0, 0.1, 0)
+			"description" = ""
+			"hatpin" = (0, 0, 0)
+			"flags" = "1"
+			"movable" = 1
+		}
+		"type" = ""
+	}
+	3 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"shape" = "cube"
+			"position" = (50, 0, 0)
+			"scale" = (10, 10, 10)
+			"eulers" = (0, 0, 0)
+			"solid" = 1
+			"movable" = false
+
+			"visible" = 1
+			"red" = 0.8
+			"green" = 0.1
+			"blue" = 0.1
+			"description" = "The first target for the zook to follow"
+		}
+	}
+	4 = 
+	{
+		"agent" = "Target"
+	    	"params" = 
+    		{
+		    	"shape" = "ball"
+		    	"position" = (-50, 0, 0)
+		    	"scale" = (5, 0, 0)
+		    	"eulers" = (0, 0, 0)
+		    	"solid" = 1
+		    	"movable" = false
+		    	
+		    	"visible" = 1
+		    	"red" = 0.1
+		    	"green" = 0.1
+		    	"blue" = 0.8
+			"description" = "The second target for the zook to follow"
+    		}
+	}
+}
+"version" = 1
