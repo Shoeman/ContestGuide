@@ -2,7 +2,7 @@
 
 In part 4, we put zooks on the table using ZookPlaceHolder, but the zooks just go in circles because they haven't been told to go anywhere. This is where we need a behaviour.
 
-As mentioned in part 1, contest files are split into 2 parts, behaviours and agents with behaviours being the more complicated of the 2. In this part we will be looking at the "follow" behaviour which is by far the most commonly used, and often the only bahaviour needed for a contest.
+As mentioned in part 1, contest files are split into 2 parts, behaviours and agents with behaviours being the more complicated of the two. In this part we will be looking at the "Follow" behaviour which is by far the most commonly used, and often the only bahaviour needed for a contest.
 
 The follow behaviour gives a zook an agent or sequence of agents to follow. Before we look at the behaviour, let's take a look at the agents it's going to reference:
 
@@ -216,4 +216,15 @@ Since there was a lot to unpack for this one, here's a short summary of what you
 1. Copy an existing "follow" behaviour
 2. Change the "id" (inside and out) to something unique in your behaviours
 3. Set the "owner" to be the agent id of the ZookPlaceHolder you want to use this behaviour
-4. 
+4. List the sequence of agents to follow in "targets"
+
+### Common usage
+
+Zooks aren't often seen chasing a particular agent in real contests. That's because most targets used for following are invisible and non-solid using the parameters:
+
+	"visible" = false
+	"solid" = false
+
+Which gives the illusion of the zook finding a path or avoiding obstacles in a more intelligent way.
+
+It's also worth mentioning a ZookPlaceHolder can also be a target listed in a "Follow" behaviour to have zooks chasing other zooks.
