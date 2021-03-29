@@ -37,3 +37,5 @@ In summary, a new contest requires:
 [Part 3 - The Table](PART3.md)
 
 [Part 4 - Zook Placeholders](PART4.md)
+
+[Part 5 - Behaviours - Follow](PART5.md)
